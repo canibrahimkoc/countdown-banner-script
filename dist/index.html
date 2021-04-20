@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - top countdown banner</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://www.patirti.com/Themes/default/Content/css/style.min.css?v=29092020" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script>
+    /**
+    Countdown Banner Script
+    **/
+    $(function(global) {
+        // Countdown Banner On
+        var ımgOneDesktopImg = "https://www.patirti.com/Content/fileUpload/780x60-Desktop-19.gif";
+        var ımgOneDesktopHeight = 60;
+        var ımgOneMobileImg = "https://www.patirti.com/Content/fileUpload/400x60-Mobil-19.gif";
+        var ımgOneMobileHeight = 80;
+        var ımgOneUrl = "/iftardan-sahura-etiketin-yarisi/";
+        var ımgOneTarget = "_blank";
+        var ımgOneBg = "#001a71";
+        var ımgOneClose = "on";
+
+        // Countdown Banner Off
+        var ımgTwoDesktopImg = "https://www.patirti.com/Content/fileUpload/780x60-Desktop-19.gif";
+        var ımgTwoDesktopHeight = 60;
+        var ımgTwoMobileImg = "https://www.patirti.com/Content/fileUpload/400x60-Mobil-19.gif";
+        var ımgTwoMobileHeight = 80;
+        var ımgTwoUrl = "/ramazana-ozel-fiyatlar/";
+        var ımgTwoTarget = "_blank";
+        var ımgTwoBg = "#001a71";
+        var ımgTwoClose = "off";
+
+        // Count Settings
+        var bannerCountStart = "19"; // Start Time
+        var bannerCountEnd = "07"; // End Time
+        var bannerCountDate = "2022-01-20"; // End Date
+        var bannerCountBg = "rgba(00, 00, 00, 0.4)"; // Count Background Color
+        var bannerCountText = "#ffffff"; // Count Text Color
+
+        // Countdown Script
+      $("body").prepend('<div class="top-countdown-wrapper"><a class="top-countdown-banner"><div class="container--flush"><img src=""><div class="countdown-area"><span></span><strong></strong></div></div></a><span class="dropdown-close"></span></div>');var bannerCount=setInterval(function(){var o=new Date,n=bannerCountDate+" "+bannerCountEnd+":00:00",e=new Date(n.replace(" ","T")).getTime()-o.getTime(),t=(Math.floor(e/864e5),Math.floor(e%864e5/36e5)),r=Math.floor(e%36e5/6e4),a=Math.floor(e%6e4/1e3);(e<=0||o.getHours()<bannerCountStart)&&(ımgOneDesktopImg=ımgTwoDesktopImg,ımgOneDesktopHeight=ımgTwoDesktopHeight,ımgOneMobileImg=ımgTwoMobileImg,ımgOneMobileHeight=ımgTwoMobileHeight,ımgOneUrl=ımgTwoUrl,ımgOneTarget=ımgTwoTarget,ımgOneBg=ımgTwoBg,ımgOneClose=ımgTwoClose,$(".top-countdown-wrapper .countdown-area").hide(),$(".top-countdown-wrapper img").css({margin:"0 auto",padding:"0"}),clearInterval(bannerCount));var p=navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod||Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/);$(window).width()<=700&&p?($(".top-countdown-banner").css({"background-color":bannerBg,height:ımgOneMobileHeight}),$(".top-countdown-banner img").attr("src",ımgOneMobileImg),$(".top-countdown-wrapper").addClass("mobile-countdown")):($(".top-countdown-banner").css({"background-color":ımgOneBg,height:ımgOneDesktopHeight}),$(".top-countdown-banner img").attr("src",ımgOneDesktopImg)),"on"==ımgOneClose&&$(".top-countdown-wrapper .dropdown-close").show(),$(".top-countdown-wrapper").css("background-color",ımgOneBg),$(".top-countdown-wrapper .dropdown-close").css({"background-color":bannerCountBg,color:bannerCountText,"border-color":bannerCountText}),$(".top-countdown-wrapper .top-countdown-banner").attr("href",ımgOneUrl),$(".top-countdown-wrapper .top-countdown-banner").attr("target",ımgOneTarget),$(".top-countdown-wrapper .countdown-area").css({"background-color":bannerCountBg,color:bannerCountText}),$(".top-countdown-wrapper .countdown-area span").html("<ul><li>"+t+"<span>SA</span></li><li>"+r+"<span>DK</span></li><li>"+a+"<span>SN</span></li></ul>"),$(".top-countdown-wrapper").slideDown(),$(".top-countdown-wrapper .dropdown-close").click(function(){clearInterval(bannerCount),$(".top-countdown-wrapper").slideUp()})},1e3);
+    });
+    </script>
+    <style>
+      .top-countdown-wrapper{display:none;width:100%;position:relative;padding:10px 0}
+      .mobile-countdown.top-countdown-wrapper{padding:0}
+      .top-countdown-wrapper .top-countdown-banner{display:block;width:100%;background-repeat-x:repeat;background-repeat-y:no-repeat;background-position:center center;background-size:auto 100%}
+      .top-countdown-wrapper .top-countdown-banner .container--flush{height:100%;position:relative}
+      .top-countdown-wrapper .top-countdown-banner .container--flush img{padding-right:180px}
+      .mobile-countdown .top-countdown-banner .container--flush img{padding-right:140px}
+      .top-countdown-wrapper .countdown-area span ul li{display:inline-block;padding:0 8px}
+      .top-countdown-wrapper .countdown-area{display:block;width:100%;max-width:160px;text-align:center;padding:8px;border-radius:3px;font-size:22px;font-weight:500;margin-left:auto;line-height:22px;position:absolute;right:10px}
+      .mobile-countdown.top-countdown-wrapper .countdown-area{display:block;width:100%;max-width:130px;text-align:center;padding:8px;border-radius:3px;font-size:22px;font-weight:500;margin-left:auto;line-height:18px;position:absolute;right:10px}
+      .top-countdown-wrapper .countdown-area span{display:block;font-size:17px;letter-spacing:1.5px}
+      .mobile-countdown.top-countdown-wrapper .countdown-area span{display:block;font-size:15px;letter-spacing:0}
+      .top-countdown-wrapper .dropdown-close{font-size:15px;color:#fff;font-weight:300;position:absolute;top:50%;transform:translateY(-50%);right:15px;width:22px;height:22px;border:1px solid #fff;border-radius:3px;padding:0 4px;line-height:20px;z-index:22;cursor: pointer;display:none}
+      .top-countdown-wrapper .dropdown-close:before{content:"";font-family:FontAwesome}
+    </style>
+  </head>
+  <body>
+  </body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
