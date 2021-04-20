@@ -1,0 +1,14 @@
+/** Countdown Banner Style **/
+.top-countdown-wrapper{display:none;width:100%;position:relative;padding:10px 0}
+.mobile-countdown.top-countdown-wrapper{padding:0}
+.top-countdown-wrapper .top-countdown-banner{display:block;width:100%;background-repeat-x:repeat;background-repeat-y:no-repeat;background-position:center center;background-size:auto 100%}
+.top-countdown-wrapper .top-countdown-banner .container--flush{height:100%;position:relative}
+.top-countdown-wrapper .top-countdown-banner .container--flush img{padding-right:180px}
+.mobile-countdown .top-countdown-banner .container--flush img{padding-right:140px}
+.top-countdown-wrapper .countdown-area span ul li{display:inline-block;padding:0 8px}
+.top-countdown-wrapper .countdown-area{display:block;width:100%;max-width:160px;text-align:center;padding:8px;border-radius:3px;font-size:22px;font-weight:500;margin-left:auto;line-height:22px;position:absolute;right:10px}
+.mobile-countdown.top-countdown-wrapper .countdown-area{display:block;width:100%;max-width:130px;text-align:center;padding:8px;border-radius:3px;font-size:22px;font-weight:500;margin-left:auto;line-height:18px;position:absolute;right:10px}
+.top-countdown-wrapper .countdown-area span{display:block;font-size:17px;letter-spacing:1.5px}
+.mobile-countdown.top-countdown-wrapper .countdown-area span{display:block;font-size:15px;letter-spacing:0}
+.top-countdown-wrapper .dropdown-close{font-size:15px;color:#fff;font-weight:300;position:absolute;top:50%;transform:translateY(-50%);right:15px;width:22px;height:22px;border:1px solid #fff;border-radius:3px;padding:0 4px;line-height:20px;z-index:22;cursor: pointer;display:none}
+.top-countdown-wrapper .dropdown-close:before{content:"";font-family:FontAwesome}
