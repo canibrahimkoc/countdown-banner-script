@@ -1,5 +1,5 @@
 /** Countdown Banner Style **/
-.top-countdown-wrapper{display:none;width:100%;position:relative;padding:10px 0}
+.top-countdown-wrapper{display:none;width:100%;position:relative;padding:0}
 .mobile-countdown.top-countdown-wrapper{padding:0}
 .top-countdown-wrapper .top-countdown-banner{display:block;width:100%;background-repeat-x:repeat;background-repeat-y:no-repeat;background-position:center center;background-size:auto 100%}
 .top-countdown-wrapper .top-countdown-banner .container--flush{height:100%;position:relative}
